@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  --background: 245 245 248;
+  --card: 255 255 255;
+  --muted: 100 116 139;
+  --accent: 79 70 229;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-50;
+  font-family: theme('fontFamily.sans');
+}
+
+a {
+  @apply text-indigo-600 hover:text-indigo-500 dark:text-indigo-400;
+}
+
+input,
+select,
+textarea {
+  @apply border border-slate-300 dark:border-slate-700 rounded-md px-3 py-2 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500;
+}
+
+button {
+  @apply rounded-md px-4 py-2 font-medium;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.5);
+  border-radius: 10px;
+}
